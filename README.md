@@ -1,4 +1,4 @@
-História do JavaScript
+História do JavaScript - Grupo: Rafael Marliere de Oliveira, Leonardo Vergutz e Enzo Campos
 Introdução
 
 JavaScript é uma das linguagens de programação mais populares do mundo. Criado em 1995, seu desenvolvimento moldou a web moderna, permitindo interatividade e dinamismo nas páginas da internet. Esta linha do tempo apresenta os principais marcos da evolução do JavaScript, desde sua criação até sua posição como a linguagem mais utilizada atualmenteO Início do JavaScript (1995 - 1997)
@@ -70,6 +70,7 @@ JavaScript na Atualidade (2023)
 Conclusão
 
 JavaScript percorreu uma jornada impressionante desde sua criação em 1995. Inicialmente, uma simples linguagem de script para navegadores, hoje é uma tecnologia essencial para desenvolvimento frontend, backend, mobile e até mesmo IA. Com atualizações constantes e uma comunidade ativa, seu futuro parece brilhante, consolidando-se cada vez mais como uma das linguagens mais influentes da programação moderna.
+
 Créditos:
 
     Linha do Tempo baseada em informações históricas e tendências do JavaScript.
