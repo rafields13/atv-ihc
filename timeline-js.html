@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Timeline Alternada do JavaScript</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Linha vertical central */
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background: #3b82f6;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 p-8">
+    <div class="relative max-w-5xl mx-auto">
+        <h1 class="text-3xl font-bold text-center mb-12">Timeline Alternada do JavaScript</h1>
+        <div class="timeline relative">
+            <!-- Card 1: Esquerda -->
+            <div class="mb-12 flex justify-between items-center w-full">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold">1995</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-gray-800 text-xl">1995 - Criação do JavaScript</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-900">
+                        Brendan Eich cria a linguagem inicialmente chamada Mocha, que evolui para JavaScript, trazendo
+                        interatividade ao Netscape Navigator.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2: Direita -->
+            <div class="mb-12 flex justify-between items-center w-full flex-row-reverse">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold">1996</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-gray-800 text-xl">1996 - Microsoft lança o JScript</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-900">
+                        A Microsoft cria o JScript para o Internet Explorer 3, gerando as primeiras incompatibilidades
+                        entre navegadores.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3: Esquerda -->
+            <div class="mb-12 flex justify-between items-center w-full">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold">1997</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-gray-800 text-xl">1997 - ECMAScript 1</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-900">
+                        A padronização do JavaScript pela ECMA International como ECMAScript 1 abre caminho para a
+                        compatibilidade entre navegadores.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 4: Direita -->
+            <div class="mb-12 flex justify-between items-center w-full flex-row-reverse">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold">1999</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-gray-800 text-xl">1999 - ECMAScript 3</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-900">
+                        A versão ECMAScript 3 traz melhorias significativas como expressões regulares e manipulação
+                        avançada de strings.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 5: Esquerda -->
+            <div class="mb-12 flex justify-between items-center w-full">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold">2005</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-gray-800 text-xl">2005 - AJAX</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-900">
+                        A introdução do AJAX revoluciona a web ao possibilitar atualizações dinâmicas sem recarregar a
+                        página.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 6: Direita -->
+            <div class="mb-12 flex justify-between items-center w-full flex-row-reverse">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold">2006</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-gray-800 text-xl">2006 - jQuery</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-900">
+                        O lançamento do jQuery simplifica a manipulação do DOM, tornando o desenvolvimento web mais
+                        acessível.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 7: Esquerda -->
+            <div class="mb-12 flex justify-between items-center w-full">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold">2009</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-gray-800 text-xl">2009 - Node.js</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-900">
+                        Ryan Dahl lança o Node.js, permitindo que o JavaScript seja utilizado também no ambiente de
+                        servidor.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 8: Direita -->
+            <div class="mb-12 flex justify-between items-center w-full flex-row-reverse">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold">2015</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-gray-800 text-xl">2015 - ECMAScript 6</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-900">
+                        O ES6 moderniza o JavaScript com novas funcionalidades, como let, const, arrow functions,
+                        classes e promises.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 9: Esquerda -->
+            <div class="mb-12 flex justify-between items-center w-full">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold">2016</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-gray-800 text-xl">2016 - React e Vue.js</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-900">
+                        Frameworks como React e Vue.js ganham força, promovendo um desenvolvimento front-end mais
+                        modular e eficiente.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 10: Direita -->
+            <div class="mb-12 flex justify-between items-center w-full flex-row-reverse">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold">2019</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-gray-800 text-xl">2019 - ECMAScript Anual</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-900">
+                        A partir desta data, o JavaScript passa a receber atualizações anuais, garantindo a evolução
+                        contínua da linguagem.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 11: Esquerda -->
+            <div class="mb-12 flex justify-between items-center w-full">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold">2023</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-gray-800 text-xl">2023 - Linguagem Mais Popular</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-900">
+                        Pelo 11º ano consecutivo, o JavaScript lidera as pesquisas de linguagens de programação, sendo
+                        essencial em diversas áreas do desenvolvimento.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
