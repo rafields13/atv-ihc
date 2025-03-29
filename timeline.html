@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Timeline de JavaScript</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background: #3b82f6;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 p-8">
+    <div class="relative max-w-5xl mx-auto">
+        <h1 class="text-3xl font-bold text-center mb-12">Timeline do Docker</h1>
+        <div class="timeline relative">
+
+            <!-- 2008 -->
+            <div class="mb-12 flex justify-between items-center w-full">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold">2008</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-gray-800 text-xl">2008 - Cgroups e Namespaces</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-900">
+                        O kernel do Linux introduz os cgroups e namespaces, possibilitando o isolamento de processos e
+                        recursos, base para a criação de containers.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2013 -->
+            <div class="mb-12 flex justify-between items-center w-full flex-row-reverse">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold">2013</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-gray-800 text-xl">2013 - Nascimento do Docker</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-900">
+                        A Docker Inc. lança o Docker como projeto open source, oferecendo uma forma prática de empacotar
+                        e distribuir aplicações em containers.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2014 -->
+            <div class="mb-12 flex justify-between items-center w-full">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold">2014</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-gray-800 text-xl">2014 - Docker Hub</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-900">
+                        É lançado o Docker Hub, um repositório público para imagens de containers, facilitando o
+                        compartilhamento de aplicações.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2015 -->
+            <div class="mb-12 flex justify-between items-center w-full flex-row-reverse">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold">2015</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-gray-800 text-xl">2015 - Docker Compose & Swarm</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-900">
+                        São lançados o Docker Compose, para definir aplicações multicontainer, e o Docker Swarm, para
+                        orquestração de containers em cluster.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2016 -->
+            <div class="mb-12 flex justify-between items-center w-full">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold">2016</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-gray-800 text-xl">2016 - Kubernetes</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-900">
+                        Kubernetes se torna o orquestrador padrão da indústria, com suporte a Docker, promovendo
+                        escalabilidade e resiliência em ambientes de produção.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2020 -->
+            <div class="mb-12 flex justify-between items-center w-full flex-row-reverse">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold">2020</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-gray-800 text-xl">2020 - Docker no DevOps</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-900">
+                        Adoção massiva do Docker em pipelines CI/CD e ambientes de desenvolvimento integrados com GitHub
+                        Actions, GitLab CI e outros.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2021 -->
+            <div class="mb-12 flex justify-between items-center w-full">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold">2021</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-gray-800 text-xl">2021 - Docker Desktop para M1</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-900">
+                        A Docker lança suporte oficial para chips Apple Silicon (M1), ampliando compatibilidade e
+                        desempenho para desenvolvedores.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2023 -->
+            <div class="mb-12 flex justify-between items-center w-full flex-row-reverse">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold">2023</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-gray-800 text-xl">2023 - Docker + Kubernetes</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-900">
+                        Docker e Kubernetes seguem como ferramentas essenciais em ambientes corporativos, cloud híbrida
+                        e microserviços.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

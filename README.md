@@ -1,79 +1,85 @@
-História do JavaScript - Grupo: Rafael Marliere de Oliveira, Leonardo Vergutz e Enzo Campos
+# Hypervisors, Máquinas Virtuais e a Evolução da Virtualização
 
-Introdução
+## O que são Hypervisors
 
-JavaScript é uma das linguagens de programação mais populares do mundo. Criado em 1995, seu desenvolvimento moldou a web moderna, permitindo interatividade e dinamismo nas páginas da internet. Esta linha do tempo apresenta os principais marcos da evolução do JavaScript, desde sua criação até sua posição como a linguagem mais utilizada atualmenteO Início do JavaScript (1995 - 1997)
-1995 - Criação do JavaScript
+Hypervisors são softwares que permitem criar e gerenciar máquinas virtuais (VMs). Eles funcionam como uma camada entre o hardware físico e os sistemas operacionais virtuais, abstraindo recursos e garantindo isolamento.
 
-🔹 Evento: Brendan Eich, engenheiro da Netscape, desenvolve uma nova linguagem de script inicialmente chamada Mocha, depois renomeada para LiveScript e, finalmente, JavaScript.
+### Tipos de Hypervisors
 
-🔹 Motivo: A Netscape queria adicionar interatividade ao navegador Netscape Navigator.
+- **Tipo 1 (Bare-Metal):** Roda diretamente no hardware. Ex: VMware ESXi, Hyper-V, Xen.
+- **Tipo 2 (Hosted):** Roda sobre um sistema operacional existente. Ex: VirtualBox, VMware Workstation.
 
-🔹 Impacto: JavaScript rapidamente se torna um diferencial para o desenvolvimento web.
-1996 - Microsoft lança o JScript
+## Máquinas Virtuais (VMs)
 
-🔹 Evento: A Microsoft cria uma versão própria do JavaScript, chamada JScript, integrada ao Internet Explorer 3.
+Máquinas Virtuais são ambientes computacionais isolados que executam um sistema operacional e aplicativos sobre um hypervisor.
 
-🔹 Impacto: Incompatibilidades entre navegadores começam a surgir, pois JScript não era totalmente compatível com JavaScript da Netscape.
-1997 - JavaScript se torna um padrão (ECMAScript 1)
+### Vantagens
 
-🔹 Evento: A ECMA International padroniza a linguagem com o nome ECMAScript 1 (ES1).
+- Isolamento entre ambientes
+- Consolidação de servidores
+- Backup e migração facilitados
+- Ambientes seguros para testes
 
-🔹 Motivo: Garantir compatibilidade entre diferentes navegadores e evitar fragmentação da linguagem.
+### Desvantagens
 
-🔹 Impacto: Criação de um roadmap oficial para a evolução do JavaScript.
-Evolução e Expansão (1999 - 2009)
-1999 - ECMAScript 3 e a popularização do JavaScript
+- Alto consumo de recursos
+- Inicialização mais lenta
+- Overhead do sistema operacional guest
+- Gerenciamento mais complexo
 
-🔹 Evento: Lançamento do ECMAScript 3 (ES3), trazendo melhorias como suporte a expressões regulares (regex) e melhor manipulação de strings.
+## Aplicações de Hypervisors e VMs
 
-🔹 Impacto: A linguagem se torna ainda mais dinâmica e popular para desenvolvimento web.
-2005 - AJAX e a revolução das aplicações web
+- Consolidação de servidores
+- Testes de software em ambientes isolados
+- Escalabilidade sob demanda
+- Recuperação de desastres
+- Ambientes de desenvolvimento reproduzíveis
 
-🔹 Evento: A introdução do AJAX (Asynchronous JavaScript and XML) permite que páginas carreguem dados sem precisar recarregar completamente.
+## Linha do Tempo da Virtualização
 
-🔹 Impacto: Aplicações como Gmail, Google Maps e Facebook impulsionam o uso de JavaScript para criar interfaces mais interativas.
-2006 - Nascimento do jQuery
+| Ano     | Evento                                                                 |
+|---------|------------------------------------------------------------------------|
+| 1960s   | IBM CP-40/CMS: primeiros sistemas de virtualização em mainframes       |
+| 1970s   | IBM VM/370: popularização da virtualização em ambientes corporativos   |
+| 1980s   | Queda da virtualização com a ascensão dos PCs e arquitetura x86        |
+| 1990s   | Retorno da virtualização com suporte em hardware (VT-x, AMD-V)         |
+| 2000s   | Hypervisors modernos: ESXi, Xen, VirtualBox; consolidação em data centers |
+| 2010s   | Nuvem e IaaS com AWS, Azure e GCP                                       |
+| 2020s   | Containers e virtualização híbrida (VMs + Containers)                  |
+| Futuro  | Integração com IA, Edge, NFV e foco em segurança e automação           |
 
-🔹 Evento: John Resig lança o jQuery, uma biblioteca que simplifica a manipulação do DOM.
+## Containers e Docker
 
-🔹 Impacto: JavaScript se torna mais acessível para desenvolvedores, permitindo código mais conciso e legível.
-2009 - Surgimento do Node.js
+Containers são unidades leves que empacotam aplicações e dependências, utilizando o kernel do SO host. São mais rápidos e leves que VMs.
 
-🔹 Evento: Ryan Dahl cria o Node.js, permitindo que o JavaScript seja executado no servidor.
+### Características Comparativas
 
-🔹 Impacto: JavaScript expande seu uso além dos navegadores, possibilitando a criação de aplicações backend escaláveis.
-A Era Moderna do JavaScript (2015 - 2019)
-2015 - ECMAScript 6 e a modernização do JavaScript
+| Característica | Máquinas Virtuais | Containers       |
+|----------------|-------------------|------------------|
+| Isolamento     | Completo          | Parcial (kernel) |
+| Recursos       | Alto              | Baixo            |
+| Inicialização  | Lenta             | Rápida           |
+| Portabilidade  | Média             | Alta             |
+| Gerenciamento  | Complexo          | Simples          |
 
-🔹 Evento: O ECMAScript 6 (ES6) é lançado, trazendo diversas melhorias, como:
-let e const para variáveis
-Arrow functions
-Classes e promises
+## Kubernetes
 
-🔹 Impacto: JavaScript se torna mais robusto, legível e moderno, aumentando sua adoção no mercado.
-2016 - Popularização do React e Vue.js
+Kubernetes é uma plataforma de orquestração de containers que automatiza a implantação, escalonamento e gestão de aplicações.
 
-🔹 Evento: React e Vue.js ganham espaço como os frameworks front-end mais populares.
+### Características
 
-🔹 Impacto: O desenvolvimento web se torna mais dinâmico e modularizado, facilitando a criação de Single Page Applications (SPA).
-2019 - ECMAScript se torna um padrão anual
+- Orquestração de containers
+- Escalabilidade automática
+- Auto-recuperação de falhas
+- Balanceamento de carga
+- Funciona em nuvem pública, privada e híbrida
 
-🔹 Evento: Lançamento do ES10, consolidando a estratégia de atualizações anuais para o JavaScript.
+## DevOps, IaC e Ambientes Virtuais
 
-🔹 Impacto: Garantia de evolução constante da linguagem, trazendo novas funcionalidades regularmente.
-JavaScript na Atualidade (2023)
-2023 - JavaScript segue como a linguagem mais popular
+- Ambientes virtualizados garantem isolamento e consistência para equipes de desenvolvimento
+- Infrastructure as Code permite criar e destruir ambientes sob demanda com versionamento
+- Testes de carga podem ser realizados com VMs ou containers de forma controlada e automatizada
 
-🔹 Evento: O Stack Overflow Developer Survey aponta JavaScript como a linguagem mais utilizada pelo 11º ano consecutivo.
+## Considerações Finais
 
-🔹 Impacto: JavaScript continua sendo essencial para o desenvolvimento web e mobile, sendo amplamente adotado por empresas e desenvolvedores.
-Conclusão
-
-JavaScript percorreu uma jornada impressionante desde sua criação em 1995. Inicialmente, uma simples linguagem de script para navegadores, hoje é uma tecnologia essencial para desenvolvimento frontend, backend, mobile e até mesmo IA. Com atualizações constantes e uma comunidade ativa, seu futuro parece brilhante, consolidando-se cada vez mais como uma das linguagens mais influentes da programação moderna.
-
-Créditos:
-
-    Linha do Tempo baseada em informações históricas e tendências do JavaScript.
-    Imagens e dados extraídos de fontes confiáveis da web.
-    https://miro.com/app/board/uXjVIMllTog=/
+Hypervisors e VMs continuam sendo essenciais em infraestrutura, enquanto containers e orquestradores como Kubernetes representam a próxima etapa da virtualização. A combinação dessas tecnologias viabiliza ambientes escaláveis, portáveis e seguros para desenvolvimento e operação em nuvem.
